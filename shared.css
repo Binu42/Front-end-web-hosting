@@ -85,7 +85,7 @@ body {
 .mobile-nav {
   display: none;
   position: fixed;
-  z-index: 101;
+  z-index: 110;
   top: 0;
   left: 0;
   background: black;
