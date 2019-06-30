@@ -1,0 +1,97 @@
+.section1 {
+  /* height: 18.76rem; */
+  background: #d5ffdc;
+  width: 80%;
+  border: 2px solid #0e4f1f;
+  margin: 4rem auto 1.9rem auto;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.section2 {
+  /* height: 18.76rem; */
+  background: #e6f3f4;
+  width: 80%;
+  border: 2px solid #0e4f1f;
+  float: right;
+  padding: 1rem;
+}
+
+.background {
+  background: url("../images/plans-background.jpg") center/cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  filter: grayscale(20%);
+  top: 0;
+  z-index: -1;
+}
+.clearfix {
+  clear: both;
+}
+
+.section3 {
+  /* height: 18.76rem; */
+  background: #0e4f1f;
+  width: 80%;
+  border: 2px solid #0e4f1f;
+  margin: 30px auto;
+  float: left;
+  padding: 1rem;
+}
+
+.recc {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.2rem;
+  font-size: 0.8rem;
+  color: white;
+  background: #ff5454;
+  padding: 0.5rem;
+  transform: rotate(45deg) translateX(3rem) translateY(-2rem);
+  width: 10rem;
+  text-align: center;
+}
+
+.section1:hover, .section2:hover, .section3:hover{
+  box-shadow: 3px 2px 4px rgba(145, 250, 9, 0.82);
+  border-color: orange;
+}
+
+.section1 a, .section2 a, .section3 a {
+  text-decoration: none;
+}
+
+.section1 h1, .section2 h1 {
+  color: black;
+  font-size: 2rem;
+}
+
+.section3 h1 {
+  color: white;
+  font-size: 2rem;
+}
+.section1 h2, .section2 h2, .section3 h2 {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.para {
+  background: white;
+  padding: 20px;
+  color: #0e4f1f;
+  border: 1px solid black;
+  /* font-family: "Roboto", sans-serif;
+  font-weight: 900; */
+  font: 700 1.2rem "Roboto", sans-serif;
+}
+
+@media (min-width: 40rem) {
+  main {
+    margin: 2rem auto;
+    max-width: 85%;
+  }
+}

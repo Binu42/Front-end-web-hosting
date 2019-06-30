@@ -1,0 +1,127 @@
+main {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+}
+
+.signup-title {
+  text-align: center;
+  color: #ff5454;
+  font-size: 1.8rem;
+}
+
+.signup-form label {
+  font-weight: bold;
+}
+
+.signup-checkbox label {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.signup-form {
+  padding: 1rem;
+  display: grid;
+}
+
+.signup-form label,
+.signup-form select,
+.signup-form input {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.signup-form input[id *= 'terms'],
+.signup-form input[id *= 'terms'] +  label {
+  display: inline-block;
+  width: auto;
+  vertical-align: bottom;
+}
+
+.signup-form button[type='submit'] {
+  display: block;
+  margin-top: 1rem;
+}
+
+.button {
+  width: 10rem;
+  background: #299d19;
+  border: #299d19;
+  border-radius: 8px;
+  color: #fff;
+  height: auto;
+  box-shadow: none;
+  height: 2rem;
+  font-weight: bold;
+  font: inherit;
+  font-size: 1.1rem;
+  margin: auto;
+}
+
+.button:hover,
+.button:active {
+  background: #66e850;
+  color: white;
+}
+
+.signup-form input:not([type='checkbox']),
+.signup-form select {
+  font: inherit;
+  border: 1px solid #ccc;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+}
+
+.signup-form input:not([type='checkbox']):focus,
+.signup-form select:focus {
+  outline: none;
+  background: rgb(229, 249, 235);
+  border-color: #2ddf5c;
+}
+
+.signup-form input[type='checkbox'] {
+  border: 1px solid black;
+  outline: none;
+  border-radius: 4px;
+  background: white;
+  width: 1rem;
+  height: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.signup-form input[type='checkbox']:checked {
+  background: #2ddf5c;
+  border-color: #0e4f1f;
+}
+
+.signup-form input[type='checkbox']:hover {
+  /* background: #2ddf5c; */
+  border-color: orange;
+}
+
+@media (min-width: 40rem) {
+  .signup-form {
+    margin: auto;
+    width: 35rem;
+    grid-template-columns: 10rem auto;
+    grid-gap: 1rem 1rem;
+  }
+  .signup-checkbox {
+    grid-column: span 2;
+  }
+
+  .button {
+    grid-column: 2/span 1;
+  }
+
+  .signup-form [id="title"] {
+    grid-column: span 2;
+  }
+
+  .signup-checkbox label {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
